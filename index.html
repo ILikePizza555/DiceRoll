@@ -12,8 +12,13 @@
                 font-size: 18px;
             }
 
+            button {
+                width: 100%;
+                font-size: 16px;
+            }
+
             .game-container {
-                width: 200px;
+                width: 320px;
                 margin: 0 auto;
             }
 
@@ -34,7 +39,8 @@
                 money: 0,
                 dice: [
                     {name: "d4", roll_max: 4, roll_min: 1, count: 10},
-                    {name: "d6", roll_max: 6, roll_min: 1, count: 0}
+                    {name: "d6", roll_max: 6, roll_min: 1, count: 0},
+                    {name: "d20", roll_max: 20, roll_min: 1, count: 0}
                 ],
 
                 roll: undefined
@@ -77,6 +83,7 @@
             </div>
             <div class="store-group">
                 <h2>Store</h2>
+                <h3>Dies</h3>
                 <button id="buy-d4">Buy a d4. Cost: 3</button>
                 <button id="buy-d6">Buy a d6. Cost: 4</button>
                 <button id="buy-d20">Buy a d20. Cost: 11</button>
@@ -102,7 +109,7 @@
                     .addEventListener("click", buy.bind(null, game_data.dice[1], 4));
 
             document.querySelector("#buy-d20")
-                    .addEventListener("click", buy.bind(null, game_data.dice[1], 11));
+                    .addEventListener("click", buy.bind(null, game_data.dice[2], 11));
         </script>
     </body>
 </html>
