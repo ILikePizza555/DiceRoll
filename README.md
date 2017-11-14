@@ -1,6 +1,8 @@
 # DiceRoll
 A random HTML5 clicker game.
 
+You may play it here: https://ilikepizza555.github.io/DiceRoll/
+
 Everything is self-contained in index.html. Simply load it up in your web browser to play.
 
 # Game Instructions
