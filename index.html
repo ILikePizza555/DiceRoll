@@ -39,7 +39,8 @@
                 money: 0,
                 dice: [
                     {name: "d4", roll_max: 4, roll_min: 1, count: 10},
-                    {name: "d6", roll_max: 6, roll_min: 1, count: 0}
+                    {name: "d6", roll_max: 6, roll_min: 1, count: 0},
+                    {name: "d20", roll_max: 20, roll_min: 1, count: 0}
                 ],
 
                 roll: undefined
@@ -108,7 +109,7 @@
                     .addEventListener("click", buy.bind(null, game_data.dice[1], 4));
 
             document.querySelector("#buy-d20")
-                    .addEventListener("click", buy.bind(null, game_data.dice[1], 11));
+                    .addEventListener("click", buy.bind(null, game_data.dice[2], 11));
         </script>
     </body>
 </html>
